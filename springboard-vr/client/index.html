@@ -24,7 +24,14 @@
           location.pathname.match(/^\/reserve\/([^\/]+)$/) || [];
 
         if (route) {
-          document.body.innerHTML += `<button>Continue to Payment</button>`;
+          document.body.innerHTML += `
+            <div>Experience: VR Gaming</div>
+            <div>Start Time: Feb 15, 2023 at 3:50pm</div>
+            <div>Duration: 1 hour</div>
+            <div>Total: ¥1800</div>
+
+            <button>Continue to Payment</button>
+          `;
 
           document.querySelector("button").onclick = async () => {
             const response = await fetch(
@@ -35,7 +42,7 @@
                 body: JSON.stringify({
                   experienceId: "experience123",
                   priceId: "price123",
-                  startTime: new Date().toISOString(),
+                  startTime: "2023-02-15T15:50:00.00Z",
                 }),
               }
             );
