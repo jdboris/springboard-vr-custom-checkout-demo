@@ -12,6 +12,8 @@ This checkout flow involves these steps:
 
 # Installation
 
+PREREQUISITE: [Install Node.js](https://nodejs.org/en "Node.js downloads page")
+
 1. Clone this repository
 
 2. In `springboard-vr/server`...
