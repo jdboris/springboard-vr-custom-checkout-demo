@@ -27,10 +27,15 @@
 
           document.body.innerHTML += `<button>Complete Checkout</button>`;
 
-          document.querySelector("button").onclick = async () => {
+          const button = document.querySelector("button");
+          button.onclick = async () => {
             await fetch(`${API_URL}/v1/checkouts/${checkoutId}/complete`, {
               method: "PUT",
             });
+
+            button.remove();
+
+            document.body.innerHTML = `Checkout complete!`;
           };
         }
       })();
