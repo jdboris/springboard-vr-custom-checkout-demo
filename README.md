@@ -52,3 +52,5 @@ If necessary, change the ports and URLs in the `.env` files...
 3. In your browser, open [http://localhost:4000/reserve/760bb4b0-a240-11ed-b01f-c72fb11fad92](http://localhost:4000/reserve/760bb4b0-a240-11ed-b01f-c72fb11fad92 "Springboard's booking app") (Springboard's booking app)
 
 4. Visit [http://localhost:4000/v1/bookings](http://localhost:4000/v1/bookings "Springboard's bookings list") (Springboard's bookings list) at any time. After completing the checkout flow, it should reflect the new booking.
+
+NOTE: The demo stores all data in memory, so restarting the apps will clear the data.
