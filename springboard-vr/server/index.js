@@ -46,5 +46,6 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
+  console.log(`Springboard's app started!`);
   console.log(`Listening on port ${PORT}`);
 });

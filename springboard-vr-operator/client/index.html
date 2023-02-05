@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HoloLounge Checkout</title>
+    <title>Operator Checkout</title>
   </head>
   <body>
     <script>
@@ -25,7 +25,10 @@
         if (route) {
           const checkoutId = new URL(location).searchParams.get("checkoutId");
 
-          document.body.innerHTML += `<button>Complete Checkout</button>`;
+          document.body.innerHTML = `
+            <h1>Operator Checkout Page</h1>
+            <button>Complete Checkout</button>
+          `;
 
           const button = document.querySelector("button");
           button.onclick = async () => {
@@ -35,7 +38,10 @@
 
             button.remove();
 
-            document.body.innerHTML = `Checkout complete!`;
+            document.body.innerHTML = `
+              <h1>Operator Checkout Page</h1>
+              Checkout complete!
+            `;
           };
         }
       })();

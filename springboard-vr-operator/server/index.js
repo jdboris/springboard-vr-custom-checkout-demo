@@ -43,5 +43,6 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
+  console.log(`Operator's app started!`);
   console.log(`Listening on port ${PORT}`);
 });
